@@ -1,0 +1,170 @@
+
+id: 19
+team: 2
+drivers:
+  -
+    participant_id: 23
+    kart_id: 1
+    average_lap_time: 39.02
+    lap_times:
+      - 46.29
+      - 39.96
+      - 37.72
+      - 41.20
+      - 37.83
+      - 40.11
+      - 38.87
+      - 38.46
+      - 35.84
+      - 38.87
+      - 38.38
+      - 35.25
+      - 39.11
+      - 38.36
+  -
+    participant_id: 15
+    kart_id: 4
+    average_lap_time: 50.66
+    lap_times:
+      - 76.47
+      - 46.71
+      - 47.70
+      - 39.83
+      - 64.30
+      - 48.38
+      - 40.18
+      - 50.76
+      - 50.00
+      - 36.69
+      - 56.22
+  -
+    participant_id: 17
+    kart_id: 9
+    average_lap_time: 46.92
+    lap_times:
+      - 42.70
+      - 40.98
+      - 46.89
+      - 39.96
+      - 45.00
+      - 74.15
+      - 40.70
+      - 38.57
+      - 75.06
+      - 38.11
+      - 38.13
+      - 42.85
+  -
+    participant_id: 24
+    kart_id: 21
+    average_lap_time: 45.28
+    lap_times:
+      - 58.92
+      - 51.87
+      - 56.79
+      - 43.42
+      - 48.67
+      - 44.00
+      - 42.33
+      - 40.53
+      - 39.75
+      - 38.20
+      - 38.36
+      - 40.56
+  -
+    participant_id: 13
+    kart_id: 12
+    average_lap_time: 56.83
+    lap_times:
+      - 94.82
+      - 53.88
+      - 45.37
+      - 63.64
+      - 41.11
+      - 85.65
+      - 41.10
+      - 39.17
+      - 46.74
+  -
+    participant_id: 21
+    kart_id: 6
+    average_lap_time: 50.64
+    lap_times:
+      - 53.26
+      - 43.43
+      - 42.97
+      - 44.43
+      - 42.41
+      - ~
+      - 42.04
+      - 39.86
+      - 39.43
+      - 40.01
+      - 41.45
+  -
+    participant_id: 16
+    kart_id: 5
+    average_lap_time: 49.55
+    lap_times:
+      - 56.24
+      - 47.19
+      - 55.77
+      - 46.15
+      - 47.57
+      - 51.55
+      - 43.05
+      - 70.74
+      - 42.27
+      - 40.42
+      - 44.12
+  -
+    participant_id: 20
+    kart_id: 3
+    average_lap_time: 48.99
+    lap_times:
+      - 53.99
+      - 51.74
+      - 61.94
+      - 53.86
+      - 46.67
+      - 41.46
+      - 45.88
+      - 47.31
+      - 48.85
+      - 40.92
+      - 46.27
+  -
+    participant_id: 18
+    kart_id: 8
+    average_lap_time: 53.52
+    lap_times:
+      - 51.74
+      - 49.34
+      - 50.39
+      - 46.99
+      - 42.77
+      - 48.06
+      - 92.03
+      - 54.51
+      - 57.69
+      - 41.71
+  -
+    participant_id: 19
+    kart_id: 14
+    average_lap_time: 69.69
+    lap_times:
+      - 72.88
+      - ~
+      - 59.65
+      - 63.72
+      - ~
+      - 50.95
+      - 50.31
+      - 52.89
+  -
+    participant_id: 14
+    kart_id: 2
+    average_lap_time: 84.26
+    lap_times:
+        - 86.59
+        - 81.92
