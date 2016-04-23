@@ -1,0 +1,39 @@
+
+team_name: Team 1
+participants:
+  -
+    display_name: Tymen
+    real_name: Tymen Bailey 
+  -
+    display_name: Richard
+    real_name: Richard Bakker
+  -
+    display_name: Johann
+    real_name: Johann Behrens 
+  -
+    display_name: Marijn
+    real_name: Marijn Bom
+  -
+    display_name: Cies
+    real_name: Cies Breijs
+  -
+    display_name: Mark B
+    real_name: Mark Buissink
+  -
+    display_name: Erik
+    real_name: Erik Deijl
+  -
+    display_name: Rutger
+    real_name: Rutger van Dillen
+  -
+    display_name: Josien
+    real_name: Josien Dragt
+  -
+    display_name: Martijn
+    real_name: Martijn Dragt
+  -
+    display_name: Menno
+    real_name: Menno Dragt
+  -
+    display_name: Lotte
+    real_name: Lotte Groeneveld

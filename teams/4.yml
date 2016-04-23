@@ -1,0 +1,36 @@
+
+team_name: Team 4
+participants:
+  -
+    display_name: Peter
+    real_name: Peter Smit
+  -
+    display_name: Matthijs
+    real_name: Matthijs Stam
+  -
+    display_name: Linda
+    real_name: Linda Steginga
+  -
+    display_name: Jim
+    real_name: Jim Thijssen
+  -
+    display_name: Andra
+    real_name: Andra Veraart
+  -
+    display_name: Tycho
+    real_name: Tycho Vermeulen
+  -
+    display_name: Iris
+    real_name: Iris Versluis
+  -
+    display_name: Wouter V.
+    real_name: Wouter Vervloet
+  -
+    display_name: Eric
+    real_name: Eric de Vos
+  -
+    display_name: Tamara
+    real_name: Tamara Waakop Reijers
+  -
+    display_name: Eelco
+    real_name: Eelco Wesemann

@@ -1,0 +1,39 @@
+
+team_name: Team 3
+participants:
+  -
+    display_name: Vincent
+    real_name: Vincent Ouwens
+  -
+    display_name: Tolga
+    real_name: Tolga Paksoy
+  -
+    display_name: Gerard
+    real_name: Gerard Pastwa
+  -
+    display_name: Lex
+    real_name: Lex Postma
+  -
+    display_name: Wouter R.
+    real_name: Wouter Ramaker
+  -
+    display_name: Korstiaan
+    real_name: Korstiaan de Ridder
+  -
+    display_name: Mats
+    real_name: Mats Rietdijk
+  -
+    display_name: Jeroen R.
+    real_name: Jeroen Rietveld
+  -
+    display_name: Belle
+    real_name: Belle van Roon
+  -
+    display_name: Kirsten
+    real_name: Kirsten Ruiter
+  -
+    display_name: Sven
+    real_name: Sven Schuiling
+  -
+    display_name: Harold
+    real_name: Harold de Smet

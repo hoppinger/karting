@@ -1,0 +1,39 @@
+
+team_name: Team 2
+participants:
+  -
+    display_name: Kevin
+    real_name: Kevin van Hengst
+  -
+    display_name: Leonie
+    real_name: Leonie van der Hoek
+  -
+    display_name: Paul
+    real_name: Paul Huisman
+  -
+    display_name: Tim
+    real_name: Tim Huisman
+  -
+    display_name: Dunya
+    real_name: Dunya Kirkali
+  -
+    display_name: Adam
+    real_name: Adam Kramer
+  -
+    display_name: Rolf
+    real_name: Rolf van de Krol
+  -
+    display_name: Jermaine
+    real_name: Jermaine Lievendag
+  -
+    display_name: Jan Metten
+    real_name: Jan Metten van der Meer
+  -
+    display_name: Wouter v/d M
+    real_name: Wouter van der Meulen
+  -
+    display_name: Marthyn
+    real_name: Marthyn Olthof
+  -
+    display_name: Daphne
+    real_name: Daphne Otterloo
