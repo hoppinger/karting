@@ -24,6 +24,19 @@ better. Below is a list of the available analyses for the data.
     Contains a list of all the participants of all heats ordered by their
     fastest lap.
 
+## Contribute
+
+If you write an analysis for this data, prefer Ruby. Create a directory in the
+`analyses` folder in which the code that runs your analysis and the results of
+it are located. If it's in any way possible, please provide a `README.md` file
+that shortly explains the results of the analysis and actually shows those
+results. The best would be that the output of your script is the `README.md`
+file. Take a look at the `ranking_fastest` and `ranking_finals` analyses for
+examples. Finally, file a Pull Request for your analysis, so we can merge it in.
+
+If you spot an error in the data, please file an issue, so we can check the 
+numbers in the printed timesheets.
+
 ## Data structure
 
 In the `teams` directory there is a file per team in which the team members are
