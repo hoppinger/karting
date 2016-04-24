@@ -17,10 +17,12 @@ winners of the tournament and received a cup.
 Raw data is nice, but generating better insights in data using code is even
 better. Below is a list of the available analyses for the data.
 
-  * _[Final ranking](https://github.com/hoppinger/karting/tree/master/analyses/ranking_finals)_
+  * __[Final ranking](https://github.com/hoppinger/karting/tree/master/analyses/ranking_finals)__
+
     Contains a list of all the participants of the final heat ordered by their
     fastest lap.
-  * _[Full ranking](https://github.com/hoppinger/karting/tree/master/analyses/ranking_fastest)_
+  * __[Full ranking](https://github.com/hoppinger/karting/tree/master/analyses/ranking_fastest)__
+
     Contains a list of all the participants of all heats ordered by their
     fastest lap.
 
