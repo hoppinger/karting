@@ -3,8 +3,6 @@ require 'active_support'
 require 'active_support/core_ext'
 require 'yaml'
 
-require 'pp'
-
 root = File.dirname(File.dirname(File.dirname(__FILE__)))
 
 participants = Hash[Dir[File.join(root, 'teams/*.yml')].map do |file_name|
