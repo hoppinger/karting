@@ -3,7 +3,7 @@
 This table contains the members of all teams (excluding the team members that
 did not drive at all), sorted by their fastest lap.
 
-| Participant name | Fastest lap |
+| Participant name | Fastest lap (seconds) |
 | --- | ---: |
 | Vincent Ouwens | 32.58 |
 | Tycho Vermeulen | 33.10 |

@@ -31,7 +31,7 @@ result_string = <<-EOF
 This table contains the the drivers that participated in the final heat, sorted
 by their fastest lap.
 
-| Participant name | Fastest lap |
+| Participant name | Fastest lap (seconds) |
 | --- | ---: |
 EOF
 

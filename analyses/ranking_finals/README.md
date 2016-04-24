@@ -3,7 +3,7 @@
 This table contains the the drivers that participated in the final heat, sorted
 by their fastest lap.
 
-| Participant name | Fastest lap |
+| Participant name | Fastest lap (seconds) |
 | --- | ---: |
 | Cies Breijs | 33.12 |
 | Vincent Ouwens | 33.99 |

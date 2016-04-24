@@ -35,7 +35,7 @@ result_string = <<-EOF
 This table contains the members of all teams (excluding the team members that
 did not drive at all), sorted by their fastest lap.
 
-| Participant name | Fastest lap |
+| Participant name | Fastest lap (seconds) |
 | --- | ---: |
 EOF
 

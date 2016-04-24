@@ -16,7 +16,7 @@ winners of the tournament and received a cup.
 
 In the `teams` directory there is a file per team in which the team members are
 listed. In the `heats` directory, there is file per heat, in which the drivers
-of the heat are listed with their lap times.
+of the heat are listed with their lap times (in seconds)
 
 ## Things to note
 
