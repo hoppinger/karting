@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Charts</title>
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"
+            integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
+            crossorigin="anonymous"></script>
+            <script src="http://d3js.org/d3.v4.0.0-alpha.26.min.js"></script>
+
+    <script src="js-yaml.min.js"></script>
+    <script type="text/javascript">
+    var heat1, svg;
+    var barWidth = 45;
+    var barOffset = 1;
+
+    var graphOffset = 10;
+
+    var q = d3.queue()
+    .defer(d3.text, "https://raw.githubusercontent.com/hoppinger/karting/master/teams/1.yml")
+    .defer(d3.text, "https://raw.githubusercontent.com/hoppinger/karting/master/teams/2.yml")
+    .defer(d3.text, "https://raw.githubusercontent.com/hoppinger/karting/master/teams/3.yml")
+    .defer(d3.text, "https://raw.githubusercontent.com/hoppinger/karting/master/teams/4.yml")
+    .defer(d3.text, "https://raw.githubusercontent.com/hoppinger/karting/master/heats/1.yml")
+    .defer(d3.text, "https://raw.githubusercontent.com/hoppinger/karting/master/heats/2.yml")
+    .defer(d3.text, "https://raw.githubusercontent.com/hoppinger/karting/master/heats/3.yml")
+    .defer(d3.text, "https://raw.githubusercontent.com/hoppinger/karting/master/heats/4.yml")
+    .defer(d3.text, "https://raw.githubusercontent.com/hoppinger/karting/master/heats/5.yml")
+    .defer(d3.text, "https://raw.githubusercontent.com/hoppinger/karting/master/heats/6.yml")
+    .defer(d3.text, "https://raw.githubusercontent.com/hoppinger/karting/master/heats/7.yml")
+    .defer(d3.text, "https://raw.githubusercontent.com/hoppinger/karting/master/heats/8.yml")
+    .defer(d3.text, "https://raw.githubusercontent.com/hoppinger/karting/master/heats/final.yml")
+    .awaitAll(function(error, files) {
+      if (error) throw error;
+
+      var teams = files.splice(0,4);
+      var participants = {};
+
+      teams.forEach(function(teamYaml) {
+        teamData = jsyaml.load(teamYaml);
+        teamData['participants'].forEach(function(participant) {
+          participants['participant_' + participant['id']] = participant;
+        })
+      });
+
+      var heats = files;
+
+      svg = d3.select('#wrapper').append('svg')
+              .attr('id', 'main')
+              .attr("font-family", "sans-serif")
+              .attr("font-size", "16px");
+      heats.forEach(function(heatYaml, heatIndex) {
+        var heatData = jsyaml.load(heatYaml);
+        graphOffset += 10;
+        svg.append('text')
+           .text('Heat ' + (heatIndex + 1))
+           .attr('y', graphOffset)
+           .attr("font-size", "24px");
+
+        graphOffset += 30;
+        console.log(heatData);
+        heatData['drivers'].forEach( function(driver, driverIndex) {
+          driverInfo = participants['participant_' + driver['participant_id']];
+          var timeData = driver['lap_times'].map(function(t) { return t == undefined ? 99 : t });
+          var driverGroup = svg.append('g')
+          var name = driverGroup.append('text')
+                                .text(driverInfo['display_name'])
+                                .attr('y', graphOffset);
+          graphOffset += 10;
+          var timeRects = driverGroup.selectAll('rect.time');
+          var maxTime = Math.max(...timeData);
+          var minTime = Math.min(...timeData);
+          var xAcum = 0
+          timeRects.data(timeData)
+               .enter()
+               .append('rect')
+               .attr('class', 'time')
+               .attr('x', function (d, i) {
+                 var x = xAcum;
+                 xAcum += d + barOffset;
+                 return x;
+               })
+               .attr('y', function(d) {return (maxTime - d) * 2 + graphOffset;})
+               .attr('width', function(d) { return d })
+               .attr('height', function(d) { return d * 2; })
+               .style('fill', function(d) {
+                 if (d == maxTime) return '#f66';
+                 if (d == minTime) return '#6d6';
+                 return '#ccc';
+               });
+          graphOffset += maxTime * 2 + 30;
+        })
+      })
+
+      var svgEl = document.getElementById("main"),
+          bb = svgEl.getBBox();
+      svgEl.style.height = bb.y + bb.height;
+      svgEl.style.width = bb.x + bb.width;
+    });
+
+    </script>
+  </head>
+  <body>
+    <div id='wrapper'>
+
+    </div>
+  </body>
+</html>
