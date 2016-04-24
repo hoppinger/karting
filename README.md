@@ -12,6 +12,18 @@ every team was sorted by the fastest lap time and then the first 2 of every team
 drove a final heat. The 3 finalists that drove the fastest laps were the
 winners of the tournament and received a cup.
 
+## Analyses, visualisation and other insights
+
+Raw data is nice, but generating better insights in data using code is even
+better. Below is a list of the available analyses for the data.
+
+  * _[Final ranking](https://github.com/hoppinger/karting/tree/master/analyses/ranking_finals)_
+    Contains a list of all the participants of the final heat ordered by their
+    fastest lap.
+  * _[Full ranking](https://github.com/hoppinger/karting/tree/master/analyses/ranking_fastest)_
+    Contains a list of all the participants of all heats ordered by their
+    fastest lap.
+
 ## Data structure
 
 In the `teams` directory there is a file per team in which the team members are
